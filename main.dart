@@ -1,5 +1,6 @@
 import 'shape/rectangle.dart';
-
+import 'services/sum_area.dart';
+import 'services/sum_perimeter.dart';
 void main(List<String> args) {
   List<Rectangle> rectangles = [
     Rectangle(10,4),
@@ -8,8 +9,8 @@ void main(List<String> args) {
     Rectangle(51,42),
   ];
 
-  double sumArea = Rectangle.sumAreas(rectangles);
-  double sumPerimeters = Rectangle.sumPerimeters(rectangles);
+  double sumArea = SumArea.sum(rectangles);
+  double sumPerimeters = SumPerimeter.sum(rectangles);
 
   print("Sumatoria Areas: $sumArea");
   print("Sumatoria Perimetros: $sumPerimeters");

@@ -1,9 +1,9 @@
-import '../shape/rectangle.dart';
+import '../interface/geometric.dart';
 
 class SumPerimeter {
-  static double sum(List<Rectangle> rectangles){
+  static double sum(List<Geometric> shapes){
     double results = 0;
-    rectangles.forEach((element) {
+    shapes.forEach((element) {
       results += element.perimeter();       
     });
     return results;
